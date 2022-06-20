@@ -22,10 +22,24 @@
     "url": "git+https://github.com/FL03/svkcl.git"
   },
   "scripts": {
-    "test": "echo \\\" No test specified \\\""
+    "build": "npm run build:button && npm run build:card",
+    "test": "echo \" No test specified \"",
+    "build:button": "npm run build --workspace=@svkcl/button",
+    "build:card": "npm run build --workspace=@svkcl/card",
+    "build:container": "npm run build --workspace=@svkcl/container",
+    "build:form": "npm run build --workspace=@svkcl/form",
+    "build:image": "npm run build --workspace=@svkcl/image",
+    "build:list": "npm run build --workspace=@svkcl/list",
+    "build:modal": "npm run build --workspace=@svkcl/model",
+    "build:navbar": "npm run build --workspace=@svkcl/navbar",
+    "build:sidebar": "npm run build --workspace=@svkcl/sidebar",
+    "build:table": "npm run build --workspace=@svkcl/table",
+    "build:text": "npm run build --workspace=@svkcl/text",
+    "build:tag": "npm run build --workspace=@svkcl/tag",
+    "build:toolbar": "npm run build --workspace=@svkcl/toolbar"
   },
   "version": "0.1.0",
   "workspaces": [
-    "packages/*"
+    "code/packages/*"
   ]
 }
