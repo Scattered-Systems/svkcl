@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "latest",
+    "rollup": "latest",
+    "rollup-plugin-svelte": "latest",
+    "svelte": "latest"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "keywords": [
+    "svelte"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "name": "@svkcl/table",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "svelte": "src/index.js"
+}
